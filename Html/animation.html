@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+            position: relative;
+        }
+        img{
+            width: 250px;
+        }
+
+        .img1{
+           margin-left: -1500px;
+           animation: slider 2s linear 1 forwards;
+        }
+        .img2{
+           margin-right: -1500px;
+           animation: slider1 2s linear 1 forwards;
+        }
+
+        @keyframes slider {
+            0%{
+                margin-left: -1500px;
+            }
+            100%{
+                margin-left:1px;
+            }
+        }
+        @keyframes slider1 {
+            0%{
+                margin-right: -1500px;
+            }
+            100%{
+                margin-right:1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img class="img1" src="../Assets/aadi.png" alt="">
+        <img class="img2" src="../Assets/aadi.png" alt="">
+        <img class="img3" src="../Assets/aadi.png" alt="">
+    </div>
+ 
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* cascading style sheet */
+/* style our web page / web structure */
+/* there are three type of css 1. inline css 2. internal css 3. external css */
+/* h1{
+    color: green;
+} */
+ /* in css there are many types of selector
+ 1.simple {element,class,id}
+ 2.combinator selector 
+ 3.psedue element
+ 4. psedue class
+ */
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ /* h1{
+    color: brown;
+}
+.r{
+    color: red;
+}
+.g{
+    color: green;
+}
+#abc{
+    color: blue;
+} */
+
+/* h1{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin-left: 500px;
+    margin-top: 200px;
+    padding-left: 28px;
+    padding-top: 40px;
+    opacity: 1;
+    box-shadow: -5px -5px 5px 1px gray;
+    float: left;
+} */
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+section{
+    height: 500px;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+aside{
+height: 250px;
+background-color: lightcoral;
+width: 50%;
+border: 1px solid black;
+}
+article{
+height: 250px;
+background-color: lightslategray;
+width: 50%;
+border: 1px solid black;
+}
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: lightyellow;
+    border: 1px solid black;
+}

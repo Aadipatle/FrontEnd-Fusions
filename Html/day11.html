@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../css/demo.css"> -->
+    <style>
+      .box {
+        height: 120px;
+        width: 120px;
+        background-color: blueviolet;
+        position: relative;
+        animation: loader 5s linear 2;
+      }
+
+      @keyframes loader {
+        0% {
+          left: 0;
+          top: 0;
+          background-color: blueviolet;
+        }
+        25% {
+          top: 0;
+          left: 1100px;
+          background-color: aqua;
+        }
+        50% {
+          top: 250px;
+          left: 1100px;
+          background-color: brown;
+        }
+        75% {
+          top: 250px;
+          left: 0;
+          background-color: red;
+        }
+        100% {
+          top: 0;
+          left: 0;
+          background-color: blueviolet;
+        }
+      }
+      /* .box{
+      height: 60px;
+      width: 60px;
+      background-color: aliceblue;
+      border: 8px solid gray;
+      border-top: 8px solid red;
+      border-radius: 50%;
+      margin-left: 450px;
+      margin-top: 250px;
+      animation:loader 2s linear infinite ;
+    }
+    
+    @keyframes loader {
+      0%{
+        border-top: 8px solid red;
+      }
+      25%{
+        border-top: 8px solid rgb(0, 110, 255);
+      }
+      50%{
+        border-top: 8px solid rgb(230, 0, 255);
+      }
+      75%{
+        border-top: 8px solid  rgb(0, 255, 72)
+      }
+      100%{
+        transform: rotate(360deg);
+        border-top: 8px solid rgb(200, 255, 0);
+    
+      }
+    
+    } */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
