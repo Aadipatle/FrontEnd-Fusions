@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  height: 110px;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+}
+.cart {
+  color: blueviolet;
+  font-size: 42px;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  opacity: 0.8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.3s linear;
+}
+a:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  color: brown;
+}
+
+/* slider css */
+
+.slider {
+  height: 350px;
+  width: 100%;
+  background-color: rgb(153, 56, 244);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slider-img img {
+  mix-blend-mode: color-dodge;
+}
+.category {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  /* background-color: white; */
+}
+.item {
+  background-color: lightcoral;
+  height: 30px;
+  width: 90px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 1px lightcoral;
+  transition: 0.3s linear;
+  opacity: .7;
+}
+.item:hover {
+  box-shadow: 0 0 10px 1px rgb(245, 149, 149);
+  transform: scale(1.1);
+  opacity: 1;
+}

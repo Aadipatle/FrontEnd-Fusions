@@ -9,6 +9,14 @@
  2.combinator selector 
  3.psedue element
  4. psedue class
+ @media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+}
  */
  *{
     padding: 0;
