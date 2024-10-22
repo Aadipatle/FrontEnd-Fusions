@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  background-color: aliceblue;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -45,7 +44,7 @@ a:hover {
 /* slider css */
 
 .slider {
-  height: 350px;
+  height: 450px;
   width: 100%;
   background-color: rgb(153, 56, 244);
   display: flex;
@@ -61,10 +60,11 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
   height: 80px;
+  height: 160px;
   /* background-color: white; */
 }
 .item {
-  background-color: lightcoral;
+  background-color: rgb(153, 56, 244);
   height: 30px;
   width: 90px;
   padding: 5px;
@@ -75,12 +75,189 @@ a:hover {
   font-size: 18px;
   align-items: center;
   border-radius: 2px;
-  box-shadow: 0 0 5px 1px lightcoral;
+  box-shadow: 0 0 5px 1px rgb(153, 56, 244);
   transition: 0.3s linear;
   opacity: .7;
 }
 .item:hover {
-  box-shadow: 0 0 10px 1px rgb(245, 149, 149);
+  box-shadow: 0 0 10px 1px rgb(183, 114, 249);
   transform: scale(1.1);
   opacity: 1;
 }
+.offers{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+}
+
+.offer{
+  height: 250px;
+  width: 320px;
+  background-color: rgb(213, 211, 211);
+  border: none;
+  box-shadow: 0 0 20px 2px gainsboro ,inset 0 0 20px 2px gainsboro;
+  animation: bounce 3s linear infinite;
+}
+.offer img{
+  width: 244px;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+}
+.offer:nth-child(2){
+  animation: bounce 3.1s linear infinite ;
+}
+.offer:nth-child(3){
+  animation: bounce 3.2s linear infinite;
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+h3{
+  text-align: center;
+  color: blueviolet;
+  font-weight: 500;
+}
+.top-selling{
+  /* background-color: darkgray; */
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.top-product img{
+  width: 250px;
+  height: 200px;
+  object-fit: fill;
+}
+.top-product{
+  height: 250px;
+  width: 390px;
+  box-shadow: 0 0  15px 2px rgb(221, 217, 217);
+  border-radius: 5px;
+  transform: scale(1);
+  transition: .8s linear;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.top-product:hover{
+  box-shadow: 0 0  20px 2px rgb(221, 217, 217);
+  transform: scale(1.1);
+}
+
+.feedback{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user{
+  height: 200px;
+  width: 650px;
+  background-color: beige;
+}
+footer{
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+/* Media Quary */
+
+
+@media screen and (max-width: 480px) {
+  header{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  nav{
+    flex-wrap: wrap;
+  }
+  .offers{
+    flex-direction: column;
+    height: 850px;
+  }
+  .top-selling{
+    flex-direction: column;
+    height: auto;
+  }
+  .top-product{
+    width: 250px;
+  }
+  .top-product img{
+    width: 150px;
+    height: 150px;
+  }
+  .feedback{
+    height: auto;
+    justify-content: center;
+  }
+}
+
+
+
+/* @media screen and (max-width:480px) {
+  header{
+   flex-wrap: wrap;
+  }
+  .offers{
+   flex-direction: column;
+   height: 850px;
+   gap: 15px;
+  }
+ 
+  .top-selling{
+   flex-direction: column;
+   width: 100%;
+   height: auto;
+   gap: 15px;
+   padding: 15px;
+  }
+  .top-product{
+   width: 100%;
+  }
+  .top-product img{
+   width: 150px;
+   height: 150px;
+  }
+ 
+ }
+ 
+ @media screen and (min-width:480px) and (max-width:768px) {
+   header{
+     flex-wrap: wrap;
+    }
+    .offers{
+     height: 380px;
+     gap: 15px;
+    }
+    .offer{
+     width: 250px;
+    }
+   
+    .top-selling{
+     flex-direction: column;
+     width: 100%;
+     height: auto;
+     gap: 15px;
+     padding: 15px;
+    }
+    .top-product{
+     width: 100%;
+    }
+    .top-product img{
+     width: 150px;
+     height: 150px;
+    }
+ } */
